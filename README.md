@@ -1,6 +1,6 @@
-# Homework - Computer Graphics
+# Homework - Computer Graphics [![Build Status](https://travis-ci.org/cfgnunes/homework-cg.svg?branch=master)](https://travis-ci.org/cfgnunes/homework-cg)
 
-[![Build Status](https://travis-ci.org/cfgnunes/homework-cg.svg?branch=master)](https://travis-ci.org/cfgnunes/homework-cg)
+If you like this project, please consider making a donation to support the developer. [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2EDNU6LPSCH6S)
 
 A simple program made with C, Freeglut, SDL2_Mixer and SOIL.
 
