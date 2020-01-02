@@ -1,0 +1,33 @@
+language: c
+matrix:
+  include:
+    # Tests on Ubuntu 16.04
+    - os: linux
+      dist: xenial
+      addons:
+        apt:
+          packages:
+            - fakeroot
+            - build-essential
+            - cmake
+            - freeglut3-dev
+            - libsdl2-mixer-dev
+            - libsoil-dev
+    # Tests on Ubuntu 18.04
+    - os: linux
+      dist: bionic
+      addons:
+        apt:
+          packages:
+            - fakeroot
+            - build-essential
+            - cmake
+            - freeglut3-dev
+            - libsdl2-mixer-dev
+            - libsoil-dev
+script:
+  - mkdir build
+  - cd build
+  - cmake -DCMAKE_BUILD_TYPE=Coverage ..
+  - make
+  - sudo make install
