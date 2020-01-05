@@ -36,18 +36,18 @@ make run
 
 ## Built With
 
-* [GCC](https://gcc.gnu.org/) - The GNU Compiler Collection
-* [Freeglut](http://freeglut.sourceforge.net/) - A alternative to the OpenGL Utility Toolkit (GLUT) library
-* [SDL2_mixer](https://www.libsdl.org/projects/SDL_mixer/) - A sound mixing library
-* [SOIL](https://www.lonesock.net/soil.html) - Simple OpenGL Image Library
+- [GCC](https://gcc.gnu.org/) - The GNU Compiler Collection
+- [Freeglut](http://freeglut.sourceforge.net/) - A alternative to the OpenGL Utility Toolkit (GLUT) library
+- [SDL2_mixer](https://www.libsdl.org/projects/SDL_mixer/) - A sound mixing library
+- [SOIL](https://www.lonesock.net/soil.html) - Simple OpenGL Image Library
 
 Other tools:
 
-* [CMake](https://cmake.org/) - Build, test and package software
+- [CMake](https://cmake.org/) - Build, test and package software
 
 ## Authors
 
-* Cristiano Nunes
-* Luiz Louro
-* Márcio Aguilar
-* Mateus Junho
+- Cristiano Nunes
+- Luiz Louro
+- Márcio Aguilar
+- Mateus Junho
