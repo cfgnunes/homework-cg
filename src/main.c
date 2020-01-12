@@ -49,29 +49,8 @@ void busca_diretorio_base() {
     }
 
     /* Tenta encontrar o diretório base em: */
-    /* ./<conteudo> */
-    strcpy(dir_base, ".");
-    strcpy(caminho_arquivo_flag, dir_base);
-    strcat(caminho_arquivo_flag, ARQUIVO_FLAG);
-    if (access(caminho_arquivo_flag, F_OK) != -1) {
-        strcpy(dir_base_arquivos, dir_base);
-        return;
-    }
-
-    /* Tenta encontrar o diretório base em: */
     /* /usr/local/share/paquito/resource/<conteudo> */
     strcpy(dir_base, "/usr/local/share/paquito");
-    strcat(dir_base, DIR_BASE_ARQUIVOS);
-    strcpy(caminho_arquivo_flag, dir_base);
-    strcat(caminho_arquivo_flag, ARQUIVO_FLAG);
-    if (access(caminho_arquivo_flag, F_OK) != -1) {
-        strcpy(dir_base_arquivos, dir_base);
-        return;
-    }
-
-    /* Tenta encontrar o diretório base em: */
-    /* ../resource/<conteudo> */
-    strcpy(dir_base, "..");
     strcat(dir_base, DIR_BASE_ARQUIVOS);
     strcpy(caminho_arquivo_flag, dir_base);
     strcat(caminho_arquivo_flag, ARQUIVO_FLAG);
