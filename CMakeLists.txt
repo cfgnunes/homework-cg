@@ -38,7 +38,7 @@ if(WIN32)
     install(FILES "C:/mingw32/i686-w64-mingw32/bin/SDL2_mixer.dll" DESTINATION "/")
 else()
     install(TARGETS ${CMAKE_PROJECT_NAME} DESTINATION "bin")
-    install(DIRECTORY "resource" DESTINATION "share/${CMAKE_PROJECT_NAME}/resource")
+    install(DIRECTORY "resource/" DESTINATION "share/${CMAKE_PROJECT_NAME}/resource")
 endif()
 
 # Define the 'run' target
