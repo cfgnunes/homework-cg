@@ -17,7 +17,7 @@
 
 /* Diretórios da aplicação */
 char dir_base_arquivos[40] = {0};
-char *const ARQUIVO_FLAG = "/paquito.txt";
+char *const ARQUIVO_FLAG = "/icon-app.ico";
 char *const DIR_BASE_ARQUIVOS = "/resource";
 
 /* Constantes dos nomes dos arquivos de música */
