@@ -1,0 +1,31 @@
+name: build
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set up git repository
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: |
+          sudo apt -y install build-essential
+          sudo apt -y install cmake
+          sudo apt -y install freeglut3-dev
+          sudo apt -y install libsdl2-mixer-dev
+          sudo apt -y install libsoil-dev
+
+      - name: Build the project
+        run: |
+          mkdir build
+          cd build
+          cmake -DCMAKE_BUILD_TYPE=Coverage ..
+          cmake --build .
+          sudo make install
